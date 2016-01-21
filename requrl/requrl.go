@@ -62,7 +62,6 @@ func (r Requrl) Geturl(thisC CallbackObject) {
 	ticker := time.NewTicker(time.Second * time.Duration(r.Interval))
 	fmt.Println(r)
 	for i := 0; i < r.Frequency; i++ {
-		http.Header.Add("User-Agent", "notify")
 		rs, err := http.Get(r.Callbackurl)
 		if err != nil {
 			loger.Println(err)
