@@ -16,9 +16,9 @@ import (
 	"syscall"
 
 	//功能实现部分
-	"notification_online/message"
-	"notification_online/requrl"
-	"notification_online/sendmail"
+	"github.com/HydeZhaoToo/notification_queue/message"
+	"github.com/HydeZhaoToo/notification_queue/requrl"
+	"github.com/HydeZhaoToo/notification_queue/sendmail"
 )
 
 var (
